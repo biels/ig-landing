@@ -6,7 +6,8 @@ const Title = styled.h1`
 `
 
 export default function Home() {
-  return <Title>My page
+  return <div>
+    My page
     <section className="section">
       <div className="container">
         <h1 className="title">
@@ -17,5 +18,5 @@ export default function Home() {
         </p>
       </div>
     </section>
-  </Title>
+  </div>
 }
