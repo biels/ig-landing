@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {motion, useAnimation} from "framer-motion";
 import Image from "next/image";
 import logoImg from "../../assets/logo.png";
+import {useInView} from "react-intersection-observer";
 
 const Container = styled.div`
   display: grid;
@@ -26,23 +27,24 @@ const ButtonContainer = styled.div`
 `
 
 export interface NavBarProps {
-    navRef
-    inView
 }
 
 export const NavBar = (props: NavBarProps) => {
+
+    const { ref: ref, inView: inView, entry: navEntry } = useInView({threshold: 0,});
+
     const controls = useAnimation()
 
     useEffect(() => {
-        if (!props.inView) controls.start(i => ({
+        if (!inView) controls.start(i => ({
             y: [-56, 0],
             transition: {ease: 'anticipate', duration: 0.5}
         }))
-    }, [props.inView])
+    }, [inView])
 
-    return <Container ref={props.navRef}>
-        {!props.inView && <div style={{height: '56px'}}/>}
-        <motion.nav custom={0} className={`navbar has-shadow ${!props.inView ? 'is-fixed-top' : ''}`}
+    return <Container ref={ref}>
+        {!inView && <div style={{height: '56px'}}/>}
+        <motion.nav custom={0} className={`navbar has-shadow ${!inView ? 'is-fixed-top' : ''}`}
                     style={{backgroundColor: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(2px)'}} role="navigation" aria-label="main navigation"
                     animate={controls}
         >
