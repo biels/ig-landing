@@ -49,7 +49,7 @@ export const Section = (props: SectionProps) => {
     let contentElements = [<div key={1} className="column">
         <div>
             <h1 className="title">{props.title}</h1>
-            <h2 className="subtitle">{props.description}</h2>
+            <h2 className="subtitle" style={{color: '#797e8b', fontSize: 24, lineHeight: '34px', fontWeight: 300}}>{props.description}</h2>
         </div>
     </div>, <div key={2} className="column">
         {props.img}

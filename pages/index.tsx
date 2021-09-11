@@ -11,6 +11,7 @@ import {NavBar} from "../components/NavBar";
 import {AppStore} from "../AppStore";
 import {Section} from "../components/Section";
 import {Hero} from "../components/Hero";
+import { Footer } from '../components/Footer'
 
 const SectionContainer = styled.div`
   display: grid;
@@ -77,9 +78,36 @@ export default function Home(props: HomeProps) {
             {/*    <li>- Connection with various accounting platforms</li>*/}
             {/*</ul>*/}
         </div>}/>
+        <Section store={props.store}
+                 title={'Modular y adaptable a cualquier tipo de centro'}
+                 direction={1}
+                 img={<Image src={aboutImg} width="3824" height="1900"/>}
+                 description={<div>
+                     Al ser totalmente modular permite adaptarse a todo tipo de Hospitales y centros de salud, sin importar el tamaño o la estructuración interna de los mismos
+                     <p/>
+                     Alef-Tav Soft constantemente va integrando y añadiendo nuevos módulos que nos aportan las necesidades de los usuarios, entre ellos:
+                    <ul>
+                        <li> - Gestión de Pacientes</li>
+                        <li> - Historia Clínica</li>
+                        <li> - Gestor de Imágenes Administrativas y Médicas</li>
+                        <li> - Agenda Planificación de Recursos</li>
+                        <li> - Facturación de los múltiples recursos y servicios</li>
+                        <li> - Conexión con diversas plataformas de Contabilidad</li>
+                    </ul>
+                 </div>}/>
+
+        <Section store={props.store}
+                 title={'Alef-Tav Soft se adapta a sus necesidades, y no al revés'}
+                 img={<Image src={aboutImg} width="3824" height="1900"/>}
+                 description={<div>
+                     Desarrollamos y nos adaptamos a las necesidades particulares de cada cliente haciendo realidad a cada deseo.  En las manos de Alef Tav Software todo es posible!
+                     <p/>
+                     Usted no debe adaptarse al Software, es Alef-Tav Soft y todo el equipo de desarrollo que se adapta totalmente a sus necesidades de forma ágil y eficiente.
+                 </div>}/>
         {/*<Section store={props.store} title={'Integrations'} direction={1} description={'Description 3'} img={null}/>*/}
         {/*<Section store={props.store} title={'clients'} direction={-1} description={'Description 4'}/>*/}
         {/*<Section store={props.store} title={'Contact Us'} direction={1} description={'Description 5'}/>*/}
         {/*<Section store={props.store} title={'Languages'} direction={-1} description={'Description 6'}/>*/}
+        <Footer/>
     </div>
 }

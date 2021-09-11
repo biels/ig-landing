@@ -34,6 +34,8 @@ export default class MyDocument extends Document {
         <Html className="">
           <Head>
               <title>MedicalOne RIS</title>
+              <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+
           </Head>
           <body>
           <Main />

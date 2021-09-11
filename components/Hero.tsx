@@ -28,7 +28,7 @@ export const Hero = (props: HeroProps) => {
             <InnerHeroContainer>
                 <div>
                     <div className="hero-body">
-                        <p className="title is-2">Alef-Tav, the new generation management software for Hospitals and HealtCare Centers</p>
+                        <p className="title is-2">Alef-Tav, the new generation management software for Hospitals and HealthCare</p>
                         <p className="subtitle is-4">
                             Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.
                         </p>
