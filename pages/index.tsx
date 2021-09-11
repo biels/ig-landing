@@ -7,10 +7,10 @@ import heroImg from '../assets/hero_img.png'
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer";
 import React, {useEffect} from "react";
-import {NavBar} from "./components/NavBar";
+import {NavBar} from "../components/NavBar";
 import {AppStore} from "../AppStore";
-import {Section} from "./components/Section";
-import {Hero} from "./components/Hero";
+import {Section} from "../components/Section";
+import {Hero} from "../components/Hero";
 
 const SectionContainer = styled.div`
   display: grid;

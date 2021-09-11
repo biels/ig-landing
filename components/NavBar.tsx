@@ -2,7 +2,7 @@ import React, {useState, useEffect, useContext} from "react";
 import styled from 'styled-components'
 import {motion, useAnimation} from "framer-motion";
 import Image from "next/image";
-import logoImg from "../../assets/logo.png";
+import logoImg from "../assets/logo.png";
 import {useInView} from "react-intersection-observer";
 
 const Container = styled.div`

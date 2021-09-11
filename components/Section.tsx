@@ -1,9 +1,9 @@
 import {motion, useAnimation} from "framer-motion";
 import React, {useEffect} from "react";
 import Image from "next/image";
-import logoImg from "../../assets/logo.png";
+import logoImg from "../assets/logo.png";
 import styled from "styled-components";
-import profilePic from "../../assets/img.png";
+import profilePic from "../assets/img.png";
 import {useInView} from "react-intersection-observer";
 
 const Container = styled.div`

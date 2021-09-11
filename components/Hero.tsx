@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext} from "react";
 import styled from 'styled-components'
 import Image from "next/image";
-import heroImg from "../../assets/hero_img.png";
+import heroImg from "../assets/hero_img.png";
 
 const Container = styled.div`
     display: grid;
