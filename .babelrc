@@ -1,4 +1,14 @@
 {
   "presets": ["next/babel"],
-  "plugins": [["styled-components", { "ssr": true }]]
+  "plugins": [
+    ["styled-components", { "ssr": true }],
+    [
+      "babel-plugin-react-intl",
+      {
+        "ast": true,
+        "idInterpolationPattern": "[sha512:contenthash:base64:6]",
+        "extractFromFormatMessageCall": true
+      }
+    ]
+  ]
 }

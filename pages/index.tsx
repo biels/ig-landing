@@ -48,24 +48,19 @@ export default function Home(props: HomeProps) {
     return <div>
         <NavBar/>
         <Hero/>
-        <div>{
-            intl.formatMessage({
-                id: 'section1.title',
-                defaultMessage: 'Confirm Password',
-                description: 'placeholder text',
-            })
-        }</div>
         <Section store={props.store}
                  title={<FormattedMessage
-                     id={'section1.title'}
                      description={'Message1'}
-                     defaultMessage={'aaa'}
+                     defaultMessage={`
+        Alef Tav Soft, the new generation management software for Hospitals and HealthCare Centers
+        Alef Tav Soft is the advanced solution that adapts to all your needs for you to easily manage your patients  administrative and healthcare information – anytime, anywhere.
+    `}
                  />}
                  direction={1}
                  img={<Image src={aboutImg} width="3824" height="1900"/>}
                  description={<FormattedMessage
-                     id={'section1.description'}
                      description={'Message1'}
+                     defaultMessage={`Alef Tav Soft is the advanced solution that adapts to all your needs for you to easily manage your patients  administrative and healthcare information – anytime, anywhere.`}
                  />}/>
         <Section store={props.store}
                  title={'Totalmente integrable e interconectable con los sistemas ya existentes en cada Centro.'}

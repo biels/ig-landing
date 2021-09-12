@@ -9,6 +9,9 @@ import {IntlProvider} from "react-intl";
 import {polyfill} from '../polyfills';
 import App from "next/app";
 
+import {DOMParser} from "xmldom";
+
+global.DOMParser = DOMParser
 
 function MyApp({Component, pageProps, locale, messages}) {
     let router = useRouter()
@@ -39,16 +42,16 @@ function getMessages(locales: string | string[] = ['en']) {
         locale = locales[i];
         switch (locale) {
             case 'en':
-                langBundle = import('../lang/en-us');
+                langBundle = import('../compiled-lang/en.json');
                 break;
             case 'es':
-                langBundle = import('../lang/es-es');
+                // langBundle = import('../compiled-lang/es.json');
                 break;
             case 'ca':
-                langBundle = import('../lang/ca-es');
+                // langBundle = import('../compiled-lang/ca.json');
                 break;
             case 'sv':
-                langBundle = import('../lang/sv-se');
+                // langBundle = import('../compiled-lang/sv.json');
                 break;
             default:
                 break;

@@ -1,23 +1,28 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "extract": "formatjs extract",
-    "extract:i18n": "formatjs extract '{pages,components}/**/*.{js,ts,tsx}' --format simple --id-interpolation-pattern '[sha512:contenthash:base64:6]' --out-file lang/en.json",
+    "dev": "cross-env PORT=5010 NODE_ICU_DATA=node_modules/full-icu ts-node --project tsconfig.server.json server.ts",
+    "dev-lang": "npm run extract:i18n && npm run compile:i18n && npm run dev",
+    "dev-no-custom-server": "next dev",
+    "build": "npm run extract:i18n && npm run compile:i18n && next build && tsc -p tsconfig.server.json",
+    "start": "cross-env PORT=5010 NODE_ENV=production NODE_ICU_DATA=node_modules/full-icu node dist/server",
+    "start-no-custom-server": "next start",
+    "extract:i18n": "formatjs extract \"{pages,components}/**/*.{js,ts,tsx}\" --format simple --id-interpolation-pattern \"[sha512:contenthash:base64:6]\" --out-file lang/en.json",
     "compile:i18n": "formatjs compile-folder --ast --format simple lang compiled-lang"
   },
   "dependencies": {
-    "@formatjs/cli": "^2.7.3",
+    "@formatjs/cli": "^4.2.33",
     "@formatjs/intl": "^1.14.1",
     "@formatjs/intl-datetimeformat": "^4.2.3",
     "@formatjs/intl-getcanonicallocales": "^1.7.3",
     "@formatjs/intl-numberformat": "^7.2.3",
     "@formatjs/intl-pluralrules": "^4.1.3",
     "@formatjs/intl-relativetimeformat": "^9.2.3",
+    "babel-plugin-react-intl": "^8.2.25",
     "bulma": "^0.9.3",
+    "cross-env": "^7.0.3",
     "framer-motion": "^4.1.17",
+    "full-icu": "^1.3.4",
     "lodash": "^4.17.21",
     "next": "^11.1.2",
     "node-sass": "5.0.0",
@@ -26,7 +31,9 @@
     "react-intersection-observer": "^8.32.0",
     "react-intl": "^5.20.10",
     "react-is": "^17.0.2",
-    "styled-components": "^5.2.3"
+    "styled-components": "^5.2.3",
+    "ts-node": "^10.2.1",
+    "xmldom": "^0.6.0"
   },
   "devDependencies": {
     "@types/node": "15.0.0",
@@ -34,6 +41,6 @@
     "@types/react-dom": "17.0.3",
     "@types/styled-components": "5.1.9",
     "babel-plugin-styled-components": "^1.12.0",
-    "typescript": "4.2.4"
+    "typescript": "4.4.3"
   }
 }
