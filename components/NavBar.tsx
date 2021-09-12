@@ -1,10 +1,11 @@
 import React, {useState, useEffect, useContext} from "react";
+import Link from 'next/link'
 import styled from 'styled-components'
 import {motion, useAnimation} from "framer-motion";
 import Image from "next/image";
 import logoImg from "../assets/logo.png";
 import {useInView} from "react-intersection-observer";
-import Link from 'next/link'
+
 
 const Container = styled.div`
   display: grid;
@@ -32,7 +33,7 @@ export interface NavBarProps {
 
 export const NavBar = (props: NavBarProps) => {
 
-    const { ref: ref, inView: inView, entry: navEntry } = useInView({threshold: 0,});
+    const {ref: ref, inView: inView, entry: navEntry} = useInView({threshold: 0,});
 
     const controls = useAnimation()
 
@@ -46,7 +47,8 @@ export const NavBar = (props: NavBarProps) => {
     return <Container ref={ref}>
         {!inView && <div style={{height: '56px'}}/>}
         <motion.nav custom={0} className={`navbar has-shadow ${!inView ? 'is-fixed-top' : ''}`}
-                    style={{backgroundColor: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(2px)'}} role="navigation" aria-label="main navigation"
+                    style={{backgroundColor: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(2px)'}} role="navigation"
+                    aria-label="main navigation"
                     animate={controls}
         >
             <div className="navbar-brand">
@@ -67,26 +69,26 @@ export const NavBar = (props: NavBarProps) => {
                             </a>
 
                             <div className="navbar-dropdown">
-                                <a className="navbar-item">
-                                    <Link href="/" locale="en">
-                                        <a>English</a>
-                                    </Link>
-                                </a>
-                                <a className="navbar-item">
-                                    <Link href="/" locale="es">
-                                        <a>Español</a>
-                                    </Link>
-                                </a>
-                                <a className="navbar-item">
-                                    <Link href="/" locale="ca">
-                                        <a>Català</a>
-                                    </Link>
-                                </a>
-                                <a className="navbar-item">
-                                    <Link href="/" locale="sv">
-                                        <a>Svenska</a>
-                                    </Link>
-                                </a>
+                                <Link href="" locale="en" passHref>
+                                    <a className="navbar-item">
+                                        <span>English</span>
+                                    </a>
+                                </Link>
+                                <Link href="" locale="es" passHref>
+                                    <a className="navbar-item">
+                                        <span>Español</span>
+                                    </a>
+                                </Link>
+                                <Link href="" locale="ca" passHref>
+                                    <a className="navbar-item">
+                                        <span>Català</span>
+                                    </a>
+                                </Link>
+                                <Link href="" locale="sv" passHref>
+                                    <a className="navbar-item">
+                                        <span>Svenska</span>
+                                    </a>
+                                </Link>
                                 {/*<hr className="navbar-divider"/>*/}
                             </div>
                         </div>

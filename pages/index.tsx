@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image'
+import Link from 'next/link'
 import logoImg from '../assets/logo.png'
 import profilePic from '../assets/img.png'
 import aboutImg from '../assets/about_img.png'

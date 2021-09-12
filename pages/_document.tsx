@@ -1,4 +1,5 @@
 import Document, { DocumentContext } from 'next/document'
+import Link from 'next/link'
 import { ServerStyleSheet } from 'styled-components'
 import { Html, Head, Main, NextScript } from 'next/document'
 

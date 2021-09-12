@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import "../styles/globals.scss";
 import {appStore} from "../utils/utils";
 
