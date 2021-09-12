@@ -5,6 +5,7 @@ import {motion, useAnimation} from "framer-motion";
 import Image from "next/image";
 import logoImg from "../assets/logo.png";
 import {useInView} from "react-intersection-observer";
+import {FormattedMessage} from "react-intl";
 
 
 const Container = styled.div`
@@ -57,12 +58,16 @@ export const NavBar = (props: NavBarProps) => {
 
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-start">
-                    <a className="navbar-item">About</a>
+                    <Link href="#about" passHref >
+                        <a className="navbar-brand">
+                            <FormattedMessage defaultMessage="About" />
+                        </a>
+                    </Link>
                     <a className="navbar-item">Product</a>
                     <a className="navbar-item">Integrations</a>
                     <a className="navbar-item">Clients</a>
                     <a className="navbar-item">Contact us</a>
-                    <a className="navbar-item">
+                    <div className="navbar-item">
                         <div className="navbar-item has-dropdown is-hoverable">
                             <a className="navbar-link">
                                 Languages
@@ -92,7 +97,7 @@ export const NavBar = (props: NavBarProps) => {
                                 {/*<hr className="navbar-divider"/>*/}
                             </div>
                         </div>
-                    </a>
+                    </div>
 
                     {/*<div className="navbar-item has-dropdown is-hoverable">*/}
                     {/*    <a className="navbar-link">More</a>*/}

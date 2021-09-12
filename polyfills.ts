@@ -34,10 +34,10 @@ export async function polyfill(locale: string = '') {
                         )
                 );
                 break;
-            case 'fr':
+            case 'es':
                 dataPolyfills.push(
                     import(
-                        /* webpackChunkName: "intl-pluralrules" */ '@formatjs/intl-pluralrules/locale-data/fr'
+                        /* webpackChunkName: "intl-pluralrules" */ '@formatjs/intl-pluralrules/locale-data/es'
                         )
                 );
                 break;
@@ -60,10 +60,10 @@ export async function polyfill(locale: string = '') {
                         )
                 );
                 break;
-            case 'fr':
+            case 'es':
                 dataPolyfills.push(
                     import(
-                        /* webpackChunkName: "intl-numberformat" */ '@formatjs/intl-numberformat/locale-data/fr'
+                        /* webpackChunkName: "intl-numberformat" */ '@formatjs/intl-numberformat/locale-data/es'
                         )
                 );
                 break;

@@ -16,6 +16,7 @@ global.DOMParser = DOMParser
 function MyApp({Component, pageProps, locale, messages}) {
     let router = useRouter()
     let store = useC3Store(() => new AppStore(router))
+    console.log(`locale`, locale);
     return <AppStoreContext.Provider value={store}>
         <IntlProvider locale={locale} defaultLocale="en" messages={messages}>
             <Component {...pageProps} store={store}/>
@@ -76,8 +77,8 @@ const getInitialProps: typeof App.getInitialProps = async appContext => {
         (typeof window !== 'undefined' && (window as any).LOCALE) ||
         'en';
 
+    console.log(`requestedLocales`, requestedLocales);
     const [supportedLocale, messagePromise] = getMessages(requestedLocales);
-
     const [, messages, appProps] = await Promise.all([
         polyfill(supportedLocale),
         messagePromise,

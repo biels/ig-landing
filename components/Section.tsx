@@ -19,6 +19,7 @@ export interface SectionProps {
     description?
     direction?
     img?
+    id?
 }
 
 export const Section = (props: SectionProps) => {
@@ -56,7 +57,7 @@ export const Section = (props: SectionProps) => {
     </div>];
 
     return <Container ref={ref}>
-        <section ref={ref} style={{minHeight: '440px'}} className="section">
+        <section id={props.id} ref={ref} style={{minHeight: '440px'}} className="section">
             <motion.div className="columns"
                         animate={controls}
                         onAnimationStart={() => {

@@ -10,7 +10,7 @@ const supportedLanguages = globSync('./compiled-lang/*.json').map(f =>
   basename(f, '.json')
 );
 
-const SUPPORTED_LOCALES = ['en', 'fr'];
+const SUPPORTED_LOCALES = ['en', 'es', 'ca', 'sv'];
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -21,7 +21,8 @@ Promise.all([app.prepare(), ...SUPPORTED_LOCALES.map(polyfill)]).then(() => {
   createServer((req, res) => {
     const accept = accepts(req);
     const locale = accept.language(supportedLanguages) || 'en';
-    (req as any).locale = locale;
+    console.log(`locale srv`, locale);
+    (req as any).locale = 'es';
     const nonce = crypto.randomBytes(20).toString('hex');
     (req as any).nonce = nonce;
     // TODO: This will blow up other next inline JS but next.js should prob fix this

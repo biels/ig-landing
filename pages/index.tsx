@@ -15,6 +15,8 @@ import {Hero} from "../components/Hero";
 import {Footer} from '../components/Footer'
 import {useStore} from "../utils/utils";
 import {FormattedMessage, useIntl, injectIntl} from "react-intl";
+import Head from 'next/head'
+
 
 const SectionContainer = styled.div`
   display: grid;
@@ -46,9 +48,14 @@ export default function Home(props: HomeProps) {
     let store = useStore()
     let intl = useIntl()
     return <div>
+        <Head>
+            <title>Alef-Tav ({intl.locale})</title>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <NavBar/>
         <Hero/>
-        <Section store={props.store}
+        <Section id={'about'} store={props.store}
                  title={<FormattedMessage
                      description={'section 1 title'}
                      defaultMessage={`

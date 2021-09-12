@@ -1,49 +1,71 @@
-import Document, { DocumentContext } from 'next/document'
+import Document, {DocumentContext} from 'next/document'
 import Link from 'next/link'
-import { ServerStyleSheet } from 'styled-components'
-import { Html, Head, Main, NextScript } from 'next/document'
+import {ServerStyleSheet} from 'styled-components'
+import {Html, Head, Main, NextScript} from 'next/document'
 
-export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+interface Props {
+    locale: string;
+    lang: string;
+    nonce: string;
+}
 
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        })
+export default class MyDocument extends Document<Props> {
+    static async getInitialProps(ctx: DocumentContext) {
+        const sheet = new ServerStyleSheet()
+        const originalRenderPage = ctx.renderPage
 
-      const initialProps = await Document.getInitialProps(ctx)
-      return {
-        ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        ),
-      }
-    } finally {
-      sheet.seal()
+        try {
+            ctx.renderPage = () =>
+                originalRenderPage({
+                    enhanceApp: (App) => (props) =>
+                        sheet.collectStyles(<App {...props} />),
+                })
+            const {req} = ctx;
+            const initialProps = await Document.getInitialProps(ctx)
+            const locale = (req as any).locale;
+            return {
+                ...initialProps,
+                styles: (
+                    <>
+                        {initialProps.styles}
+                        {sheet.getStyleElement()}
+                    </>
+                ),
+                locale,
+                lang: locale ? locale.split('-')[0] : undefined,
+                nonce: (req as any).nonce,
+            }
+        } finally {
+            sheet.seal()
+        }
     }
-  }
 
-  render() {
-    return (
-        <Html className="">
-          <Head>
-              <title>MedicalOne RIS</title>
-              <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+    render() {
+        let scriptEl;
+        if (this.props.locale) {
+            scriptEl = (
+                <script
+                    nonce={this.props.nonce}
+                    dangerouslySetInnerHTML={{
+                        __html: `window.LOCALE="${this.props.locale}"`,
+                    }}
+                />
+            );
+        }
+        console.log(`this.props.lang`, this.props.lang);
+        return (
+            <Html className="" lang={this.props.lang}>
+                <Head>
+                    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
 
-          </Head>
-          <body>
-          <Main />
-          <NextScript />
-          </body>
-        </Html>
-    )
-  }
+                </Head>
+                <body>
+                {scriptEl}
+                <Main/>
+                <NextScript/>
+                </body>
+            </Html>
+        )
+    }
 
 }
