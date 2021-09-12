@@ -4,6 +4,7 @@ import {motion, useAnimation} from "framer-motion";
 import Image from "next/image";
 import logoImg from "../assets/logo.png";
 import {useInView} from "react-intersection-observer";
+import Link from 'next/link'
 
 const Container = styled.div`
   display: grid;
@@ -59,7 +60,37 @@ export const NavBar = (props: NavBarProps) => {
                     <a className="navbar-item">Integrations</a>
                     <a className="navbar-item">Clients</a>
                     <a className="navbar-item">Contact us</a>
-                    <a className="navbar-item">Languages</a>
+                    <a className="navbar-item">
+                        <div className="navbar-item has-dropdown is-hoverable">
+                            <a className="navbar-link">
+                                Languages
+                            </a>
+
+                            <div className="navbar-dropdown">
+                                <a className="navbar-item">
+                                    <Link href="/" locale="en">
+                                        <a>English</a>
+                                    </Link>
+                                </a>
+                                <a className="navbar-item">
+                                    <Link href="/" locale="es">
+                                        <a>Español</a>
+                                    </Link>
+                                </a>
+                                <a className="navbar-item">
+                                    <Link href="/" locale="ca">
+                                        <a>Català</a>
+                                    </Link>
+                                </a>
+                                <a className="navbar-item">
+                                    <Link href="/" locale="sv">
+                                        <a>Svenska</a>
+                                    </Link>
+                                </a>
+                                {/*<hr className="navbar-divider"/>*/}
+                            </div>
+                        </div>
+                    </a>
 
                     {/*<div className="navbar-item has-dropdown is-hoverable">*/}
                     {/*    <a className="navbar-link">More</a>*/}

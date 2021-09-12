@@ -6,6 +6,13 @@ export class AppStore {
         this.init()
     }
 
+    init() {
+
+    }
+
+
+    activeLocale = 'en'
+
     animated = {
         sections: {
             about: false,
@@ -17,7 +24,4 @@ export class AppStore {
         }
     }
 
-    init() {
-
-    }
 }

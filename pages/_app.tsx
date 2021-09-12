@@ -1,7 +1,6 @@
 import "../styles/globals.scss";
-import {AppStore} from "../AppStore";
+import {appStore} from "../utils/utils";
 
-let appStore = new AppStore()
 function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} store={appStore}/>;
 }

@@ -12,6 +12,7 @@ import {AppStore} from "../AppStore";
 import {Section} from "../components/Section";
 import {Hero} from "../components/Hero";
 import { Footer } from '../components/Footer'
+import {f} from "../utils/utils";
 
 const SectionContainer = styled.div`
   display: grid;
@@ -45,15 +46,10 @@ export default function Home(props: HomeProps) {
 
         <Hero/>
         <Section store={props.store}
-                 title={'700 Hospitals and HealthCare Centers. Nestlé, BBraun one of the Us Partners..'}
+                 title={f('section1.title')}
                  direction={1}
                  img={<Image src={aboutImg} width="3824" height="1900"/>}
-                 description={<div>
-                     Alef-Tav Soft es un Software avanzado de última generación implementado en Farmacia Hospitalaria, Centros de Diagnóstico por la Imagen, y preparándose para Servicios de Cardiología, y Nutrición Clínica.
-                     <p/>
-                     Surge de una base actual con más de 700 Hospitales y Centros de HealthCare distribuidos por diferentes continentes, y partners como Nestlé, BBraun Medical y de los más importantes Hospitales en España como Hospital Universitario Niño Jesus, o MedicaSur en Mexico, entre otros.
-
-                 </div>}/>
+                 description={f('section1.description')}/>
         <Section store={props.store} title={'Totalmente integrable e interconectable con los sistemas ya existentes en cada Centro.'} direction={-1} img={<Image src={profilePic} width="3824" height="1900"/>}
                  description={<div>
                      Totalmente desarrollado para ser accedido por navegadores, y accesible por los múltiples dispositivos móviles, es completamente integrable e interconectable con los sistemas informáticos ya existentes en los Hospitales o Centros de Médicos o de HealthCare.

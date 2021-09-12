@@ -218,7 +218,7 @@
   dependencies:
     tslib "^2.1.0"
 
-"@formatjs/intl@^1.14.1":
+"@formatjs/intl@1.14.1", "@formatjs/intl@^1.14.1":
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.14.1.tgz#03e12f7e2cf557defdd1a5aeb1c143efb8cfbc7b"
   integrity sha512-mtL8oBgFwTu0GHFnxaF93fk/zNzNkPzl+27Fwg5AZ88pWHWb7037dpODzoCBnaIVk4FBO5emUn/6jI9Byj8hOw==
@@ -295,7 +295,7 @@
   dependencies:
     "@napi-rs/triples" "^1.0.3"
 
-"@types/hoist-non-react-statics@*":
+"@types/hoist-non-react-statics@*", "@types/hoist-non-react-statics@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
   integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
@@ -329,6 +329,15 @@
   version "17.0.19"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.19.tgz#8f2a85e8180a43b57966b237d26a29481dacc991"
   integrity sha512-sX1HisdB1/ZESixMTGnMxH9TDe8Sk709734fEQZzCV/4lSu9kJCPbo2PbTRoZM+53Pp0P10hYVyReUueGwUi4A==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@17":
+  version "17.0.20"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.20.tgz#a4284b184d47975c71658cd69e759b6bd37c3b8c"
+  integrity sha512-wWZrPlihslrPpcKyCSlmIlruakxr57/buQN1RjlIeaaTWDLtJkTtRW429MoQJergvVKc4IWBpRhWw7YNh/7GVA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -1506,7 +1515,7 @@ hmac-drbg@^1.0.1:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -2578,6 +2587,22 @@ react-intersection-observer@^8.32.0:
   version "8.32.0"
   resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.32.0.tgz#47249332e12e8bb99ed35a10bb7dd10446445a7b"
   integrity sha512-RlC6FvS3MFShxTn4FHAy904bVjX5Nn4/eTjUkurW0fHK+M/fyQdXuyCy9+L7yjA+YMGogzzSJNc7M4UtfSKvtw==
+
+react-intl@^5.20.10:
+  version "5.20.10"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.20.10.tgz#8b0f18a5b76e9f8f5a3ccc993deb0c4cef9dcde0"
+  integrity sha512-zy0ZQhpjkGsKcK1BFo2HbGM/q8GBVovzoXZGQ76DowR0yr6UzQuPLkrlIrObL2zxIYiDaxaz+hUJaoa2a1xqOQ==
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.9.8"
+    "@formatjs/icu-messageformat-parser" "2.0.11"
+    "@formatjs/intl" "1.14.1"
+    "@formatjs/intl-displaynames" "5.2.3"
+    "@formatjs/intl-listformat" "6.3.3"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "@types/react" "17"
+    hoist-non-react-statics "^3.3.2"
+    intl-messageformat "9.9.1"
+    tslib "^2.1.0"
 
 react-is@17.0.2, react-is@^17.0.2:
   version "17.0.2"

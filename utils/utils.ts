@@ -1,8 +1,14 @@
 import {createIntl, createIntlCache} from '@formatjs/intl';
+import { useRouter } from 'next/router'
 import {caEs} from "../lang/ca-es";
 import {esEs} from "../lang/es-es";
+import {enUs} from "../lang/en-us";
+import {AppStore} from "../AppStore";
+import {svSE} from "../lang/sv-se";
 
-export let globalLocale = 'es' // 'es'
+export let appStore = new AppStore()
+
+export let globalLocale = appStore.activeLocale // 'es'
 
 
 const cache = createIntlCache()
@@ -10,6 +16,8 @@ const cache = createIntlCache()
 let localeMessagesMap = {
     ca: caEs,
     es: esEs,
+    en: enUs,
+    sv: svSE,
 }
 const messages = localeMessagesMap[globalLocale]
 
@@ -29,7 +37,7 @@ const intl = createIntl(
  * @param text Example: 'My name is {name}'
  * @param values Example: {name: 'aa'}
  */
-export let f = (id, text, values?) => {
+export let f = (id, text?, values?) => {
     return intl.formatMessage({
             id: id,
             defaultMessage: text, // Message should be a string literal
