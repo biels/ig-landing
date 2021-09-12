@@ -50,46 +50,73 @@ export default function Home(props: HomeProps) {
         <Hero/>
         <Section store={props.store}
                  title={<FormattedMessage
-                     description={'Message1'}
+                     description={'section 1 title'}
                      defaultMessage={`
+                     <p>
         Alef Tav Soft, the new generation management software for Hospitals and HealthCare Centers
         Alef Tav Soft is the advanced solution that adapts to all your needs for you to easily manage your patients  administrative and healthcare information – anytime, anywhere.
-    `}
+    </p>
+`}
+                     values={{
+                         p: name => <p>{name}</p>,
+                     }}
                  />}
                  direction={1}
                  img={<Image src={aboutImg} width="3824" height="1900"/>}
                  description={<FormattedMessage
-                     description={'Message1'}
-                     defaultMessage={`Alef Tav Soft is the advanced solution that adapts to all your needs for you to easily manage your patients  administrative and healthcare information – anytime, anywhere.`}
+                     description={'section 1 description'}
+                     defaultMessage={`
+                     <p>
+        Alef Tav Soft is the advanced solution that adapts to all your needs for you to easily manage your patients  administrative and healthcare information – anytime, anywhere.
+    </p>
+`}
+                     values={{
+                         p: name => <p>{name}</p>,
+                     }}
                  />}/>
         <Section store={props.store}
-                 title={'Totalmente integrable e interconectable con los sistemas ya existentes en cada Centro.'}
+                 title={<FormattedMessage
+                     description={'section 2 title'}
+                     defaultMessage={`
+                     <p>
+                        Current base of 700 Hospitals and Health Centers; and some partners such as Nestlé Spain, BBraun Medical, Hospital Universitario Infantil Niño Jesús (Madrid), Hospital Universitario Gregorio Marañón (Madrid), Hospital Universitario Central Asturias (Oviedo), Hospital Médica Sur (México).
+                    </p>
+`}
+                     values={{
+                         p: name => <p>{name}</p>,
+                     }}
+                 />}
                  direction={-1} img={<Image src={profilePic} width="3824" height="1900"/>}
-                 description={<div>
-                     Totalmente desarrollado para ser accedido por navegadores, y accesible por los múltiples
-                     dispositivos móviles, es completamente integrable e interconectable con los sistemas informáticos
-                     ya existentes en los Hospitales o Centros de Médicos o de HealthCare.
-                     <p/>
-                     Alef-Tav Soft está creado totalmente para ser multiempresa, multidioma, multicontexto, y
-                     multirecursos.
-
-                     {/*<div>*/}
-                     {/*    As it is totally modular, it can be adapted to all types of Hospitals and health centers, regardless of their size or internal structure.*/}
-                     {/*</div>*/}
-
-                     {/*<div>*/}
-                     {/*    We develop and adapt to the particular needs of each client, making every wish come true. Everything is possible in the hands of Alef Tav Software!*/}
-                     {/*    You should not adapt to the Software, it is Alef-Tav and the entire development team that fully adapts to your needs in an agile and efficient way.*/}
-                     {/*</div>*/}
-                 </div>}/>
+                 description={<FormattedMessage
+                     description={'section 2 description'}
+                     defaultMessage={`
+                        <p>
+                            Alef Tav Soft is an advanced next generation Software implemented in Hospital Pharmacy, Diagnostic Imaging Centers, and preparing for Cardiology Services, and Clinical Nutrition.
+                        </p>
+                        <p>
+                            It arises from a current base with more than 700 Hospitals and Health Centers distributed throughout Europe and Latin America, and some partners such as Nestlé Spain, BBraun Medical and some of the most important Hospitals in Spain such as Hospital Universitario Infantil Niño Jesús, Hospital Universitario Gregorio Marañón, Central Asturias University Hospital, or Southern Medical Hospital in Mexico, among others.
+                        </p>
+`}
+                     values={{
+                         p: name => <p>{name}</p>,
+                     }}
+                 />}/>
         <Section store={props.store} title={'Modular y adaptable a cualquier tipo de centro'} direction={1}
-                 description={<div>
-                     Al ser totalmente modular permite adaptarse a todo tipo de Hospitales y centros de salud, sin
-                     importar el tamaño o la estructuración interna de los mismos
-                     <p/>
-                     Alef-Tav Soft constantemente va integrando y añadiendo nuevos módulos que nos aportan las
-                     necesidades de los usuarios, entre ellos:
-                 </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
+                 description={<FormattedMessage
+                     description={'section 3 description'}
+                     defaultMessage={`
+                     <p>
+        Alef Tav Soft is an advanced next generation Software implemented in Hospital Pharmacy, Diagnostic Imaging Centers, and preparing for Cardiology Services, and Clinical Nutrition.
+        </p>
+        <p>
+        It arises from a current base with more than 700 Hospitals and Health Centers distributed throughout Europe and Latin America, and some partners such as Nestlé Spain, BBraun Medical and some of the most important Hospitals in Spain such as Hospital Universitario Infantil Niño Jesús, Hospital Universitario Gregorio Marañón, Central Asturias University Hospital, or Southern Medical Hospital in Mexico, among others.
+</p>
+    
+`}
+                     values={{
+                         p: name => <p>{name}</p>,
+                     }}
+                 />} img={<Image src={profilePic} width="3824" height="1900"/>}/>
         <Section store={props.store} title={'clients'} direction={-1}
                  description={<div>
                      {/*<div>Alef-Tav is constantly integrating and adding new modules that provide us with the needs of users, including:</div>*/}
