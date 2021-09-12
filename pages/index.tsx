@@ -7,10 +7,11 @@ import heroImg from '../assets/hero_img.png'
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer";
 import React, {useEffect} from "react";
-import {NavBar} from "./components/NavBar";
+import {NavBar} from "../components/NavBar";
 import {AppStore} from "../AppStore";
-import {Section} from "./components/Section";
-import {Hero} from "./components/Hero";
+import {Section} from "../components/Section";
+import {Hero} from "../components/Hero";
+import { Footer } from '../components/Footer'
 
 const SectionContainer = styled.div`
   display: grid;
@@ -60,14 +61,14 @@ export default function Home(props: HomeProps) {
                      Alef-Tav Soft está creado totalmente para ser multiempresa, multidioma, multicontexto, y multirecursos.
 
                      {/*<div>*/}
-            {/*    As it is totally modular, it can be adapted to all types of Hospitals and health centers, regardless of their size or internal structure.*/}
-            {/*</div>*/}
+                     {/*    As it is totally modular, it can be adapted to all types of Hospitals and health centers, regardless of their size or internal structure.*/}
+                     {/*</div>*/}
 
-            {/*<div>*/}
-            {/*    We develop and adapt to the particular needs of each client, making every wish come true. Everything is possible in the hands of Alef Tav Software!*/}
-            {/*    You should not adapt to the Software, it is Alef-Tav and the entire development team that fully adapts to your needs in an agile and efficient way.*/}
-            {/*</div>*/}
-        </div>}/>
+                     {/*<div>*/}
+                     {/*    We develop and adapt to the particular needs of each client, making every wish come true. Everything is possible in the hands of Alef Tav Software!*/}
+                     {/*    You should not adapt to the Software, it is Alef-Tav and the entire development team that fully adapts to your needs in an agile and efficient way.*/}
+                     {/*</div>*/}
+                 </div>}/>
         <Section store={props.store} title={'Modular y adaptable a cualquier tipo de centro'} direction={1}
                  description={<div>
                      Al ser totalmente modular permite adaptarse a todo tipo de Hospitales y centros de salud, sin importar el tamaño o la estructuración interna de los mismos
@@ -76,20 +77,21 @@ export default function Home(props: HomeProps) {
                  </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
         <Section store={props.store} title={'clients'} direction={-1}
                  description={<div>
-            {/*<div>Alef-Tav is constantly integrating and adding new modules that provide us with the needs of users, including:</div>*/}
-            <ul>
-                <li>- Patient Management</li>
-                <li>- Clinic history</li>
-                <li>- Administrative and Medical Image Manager</li>
-                <li>- Resource Planning Agenda</li>
-                <li>- Connection with various accounting platforms</li>
-            </ul>
-        </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
+                     {/*<div>Alef-Tav is constantly integrating and adding new modules that provide us with the needs of users, including:</div>*/}
+                     <ul>
+                         <li>- Patient Management</li>
+                         <li>- Clinic history</li>
+                         <li>- Administrative and Medical Image Manager</li>
+                         <li>- Resource Planning Agenda</li>
+                         <li>- Connection with various accounting platforms</li>
+                     </ul>
+                 </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
         <Section store={props.store} title={'Alef-Tav Soft se adapta a sus necesidades, y no al revés.'} direction={1}
                  description={<div>
                      Desarrollamos y nos adaptamos a las necesidades particulares de cada cliente haciendo realidad a cada deseo.  ¡En las manos de Alef Tav Software todo es posible!
                      <p/>
                      Usted no debe adaptarse al Software, es Alef-Tav Soft y todo el equipo de desarrollo que se adapta totalmente a sus necesidades de forma ágil y eficiente.
                  </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
+        <Footer/>
     </div>
 }
