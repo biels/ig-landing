@@ -9,7 +9,7 @@
     "@formatjs/intl": "^1.14.1",
     "bulma": "^0.9.3",
     "framer-motion": "^4.1.17",
-    "next": "latest",
+    "next": "^11.1.2",
     "node-sass": "5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
