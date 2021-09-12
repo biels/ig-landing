@@ -12,8 +12,9 @@ import {NavBar} from "../components/NavBar";
 import {AppStore} from "../AppStore";
 import {Section} from "../components/Section";
 import {Hero} from "../components/Hero";
-import { Footer } from '../components/Footer'
-import {f} from "../utils/utils";
+import {Footer} from '../components/Footer'
+import {useStore} from "../utils/utils";
+import {FormattedMessage, useIntl, injectIntl} from "react-intl";
 
 const SectionContainer = styled.div`
   display: grid;
@@ -42,20 +43,40 @@ export interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
+    let store = useStore()
+    let intl = useIntl()
     return <div>
         <NavBar/>
-
         <Hero/>
+        <div>{
+            intl.formatMessage({
+                id: 'section1.title',
+                defaultMessage: 'Confirm Password',
+                description: 'placeholder text',
+            })
+        }</div>
         <Section store={props.store}
-                 title={f('section1.title')}
+                 title={<FormattedMessage
+                     id={'section1.title'}
+                     description={'Message1'}
+                     defaultMessage={'aaa'}
+                 />}
                  direction={1}
                  img={<Image src={aboutImg} width="3824" height="1900"/>}
-                 description={f('section1.description')}/>
-        <Section store={props.store} title={'Totalmente integrable e interconectable con los sistemas ya existentes en cada Centro.'} direction={-1} img={<Image src={profilePic} width="3824" height="1900"/>}
+                 description={<FormattedMessage
+                     id={'section1.description'}
+                     description={'Message1'}
+                 />}/>
+        <Section store={props.store}
+                 title={'Totalmente integrable e interconectable con los sistemas ya existentes en cada Centro.'}
+                 direction={-1} img={<Image src={profilePic} width="3824" height="1900"/>}
                  description={<div>
-                     Totalmente desarrollado para ser accedido por navegadores, y accesible por los múltiples dispositivos móviles, es completamente integrable e interconectable con los sistemas informáticos ya existentes en los Hospitales o Centros de Médicos o de HealthCare.
+                     Totalmente desarrollado para ser accedido por navegadores, y accesible por los múltiples
+                     dispositivos móviles, es completamente integrable e interconectable con los sistemas informáticos
+                     ya existentes en los Hospitales o Centros de Médicos o de HealthCare.
                      <p/>
-                     Alef-Tav Soft está creado totalmente para ser multiempresa, multidioma, multicontexto, y multirecursos.
+                     Alef-Tav Soft está creado totalmente para ser multiempresa, multidioma, multicontexto, y
+                     multirecursos.
 
                      {/*<div>*/}
                      {/*    As it is totally modular, it can be adapted to all types of Hospitals and health centers, regardless of their size or internal structure.*/}
@@ -68,9 +89,11 @@ export default function Home(props: HomeProps) {
                  </div>}/>
         <Section store={props.store} title={'Modular y adaptable a cualquier tipo de centro'} direction={1}
                  description={<div>
-                     Al ser totalmente modular permite adaptarse a todo tipo de Hospitales y centros de salud, sin importar el tamaño o la estructuración interna de los mismos
+                     Al ser totalmente modular permite adaptarse a todo tipo de Hospitales y centros de salud, sin
+                     importar el tamaño o la estructuración interna de los mismos
                      <p/>
-                     Alef-Tav Soft constantemente va integrando y añadiendo nuevos módulos que nos aportan las necesidades de los usuarios, entre ellos:
+                     Alef-Tav Soft constantemente va integrando y añadiendo nuevos módulos que nos aportan las
+                     necesidades de los usuarios, entre ellos:
                  </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
         <Section store={props.store} title={'clients'} direction={-1}
                  description={<div>
@@ -85,9 +108,11 @@ export default function Home(props: HomeProps) {
                  </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
         <Section store={props.store} title={'Alef-Tav Soft se adapta a sus necesidades, y no al revés.'} direction={1}
                  description={<div>
-                     Desarrollamos y nos adaptamos a las necesidades particulares de cada cliente haciendo realidad a cada deseo.  ¡En las manos de Alef Tav Software todo es posible!
+                     Desarrollamos y nos adaptamos a las necesidades particulares de cada cliente haciendo realidad a
+                     cada deseo. ¡En las manos de Alef Tav Software todo es posible!
                      <p/>
-                     Usted no debe adaptarse al Software, es Alef-Tav Soft y todo el equipo de desarrollo que se adapta totalmente a sus necesidades de forma ágil y eficiente.
+                     Usted no debe adaptarse al Software, es Alef-Tav Soft y todo el equipo de desarrollo que se adapta
+                     totalmente a sus necesidades de forma ágil y eficiente.
                  </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
         <Footer/>
     </div>

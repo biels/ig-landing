@@ -1,17 +1,28 @@
+import {NextRouter} from "next/router";
+import {IntlShape} from "react-intl";
 
 
 export class AppStore {
 
-    constructor() {
+    constructor(public router: NextRouter) {
         this.init()
     }
 
     init() {
+        // const messages = localeMessagesMap[globalLocale]
+        // const cache = createIntlCache()
+
 
     }
 
+    get locale(){
+        return this.router.locale
+    }
 
-    activeLocale = 'en'
+    get messages(){
+        return {}
+    }
+
 
     animated = {
         sections: {

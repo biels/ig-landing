@@ -1,4 +1,4 @@
-export let esEs = {
+export default {
     'section1.title': <div>Alef Tav Soft, la nueva generación de gestión de software para Hospitales y Centros de Salud</div>,
     'section1.description': <div>
         Alef Tav Soft es la avanzada solución que se adapta a todas sus necesidades para que fácilmente pueda gestionar la información de los pacientes, administrativa y sanitaria – en cualquier momento, en cualquier lugar..
