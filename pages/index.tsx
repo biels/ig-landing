@@ -53,9 +53,8 @@ export default function Home(props: HomeProps) {
                      description={'section 1 title'}
                      defaultMessage={`
                      <p>
-        Alef Tav Soft, the new generation management software for Hospitals and HealthCare Centers
-        Alef Tav Soft is the advanced solution that adapts to all your needs for you to easily manage your patients  administrative and healthcare information – anytime, anywhere.
-    </p>
+                        Alef Tav Soft, the new generation management software for Hospitals and HealthCare Centers
+                    </p>
 `}
                      values={{
                          p: name => <p>{name}</p>,
@@ -101,41 +100,86 @@ export default function Home(props: HomeProps) {
                          p: name => <p>{name}</p>,
                      }}
                  />}/>
-        <Section store={props.store} title={'Modular y adaptable a cualquier tipo de centro'} direction={1}
+        <Section store={props.store} title={<FormattedMessage
+            description={'section 3 title'}
+            defaultMessage={`
+                     <p>
+                        Alef Tav Soft is fully integrable and interconnectable with existing computer systems in Hospitals or Health Centers
+                     </p>
+`}
+            values={{
+                p: name => <p>{name}</p>,
+            }}
+        />} direction={1}
                  description={<FormattedMessage
                      description={'section 3 description'}
                      defaultMessage={`
                      <p>
-        Alef Tav Soft is an advanced next generation Software implemented in Hospital Pharmacy, Diagnostic Imaging Centers, and preparing for Cardiology Services, and Clinical Nutrition.
-        </p>
-        <p>
-        It arises from a current base with more than 700 Hospitals and Health Centers distributed throughout Europe and Latin America, and some partners such as Nestlé Spain, BBraun Medical and some of the most important Hospitals in Spain such as Hospital Universitario Infantil Niño Jesús, Hospital Universitario Gregorio Marañón, Central Asturias University Hospital, or Southern Medical Hospital in Mexico, among others.
-</p>
+                        Fully developed to be accessed by browsers, and accessible by multiple mobile devices, it is fully integrable and interconnectable with existing computer systems in Hospitals or Health Centers.
+                     </p>
+                     <p>
+                        Alef Tav Soft is totally created to work with a unified, multi-company, multi-language, multi-context, and multi-resource database, and accessing either through cloud servers or within the hospital itself.
+                     </p>
     
 `}
                      values={{
                          p: name => <p>{name}</p>,
                      }}
                  />} img={<Image src={profilePic} width="3824" height="1900"/>}/>
-        <Section store={props.store} title={'clients'} direction={-1}
-                 description={<div>
-                     {/*<div>Alef-Tav is constantly integrating and adding new modules that provide us with the needs of users, including:</div>*/}
+        <Section store={props.store} title={<FormattedMessage
+            description={'section 4 title'}
+            defaultMessage={`
+                     <p>
+                        Alef Tav Soft is designed to be Modular and fully Adaptable for any type of Hospital and Health Center
+                     </p>
+`}
+            values={{
+                p: name => <p>{name}</p>,
+            }}
+        />} direction={-1}
+                 description={<FormattedMessage
+                     description={'section 4 description'}
+                     defaultMessage={`
+                     <p>
+                        As it is totally modular, it can be adapted to all types of Hospitals and Health Centers, regardless of size or internal structure.
+                     </p>
+                     <p>
+                        Alef Tav Soft is incorporating new modules and functionalities in a very agile way that are providing the constant needs of the sector and users.
+                     </p>
+`}
+                     values={{
+                         p: name => <p>{name}</p>,
+                     }}
+                 />} img={<Image src={profilePic} width="3824" height="1900"/>}/>
+        <Section store={props.store} title={<FormattedMessage
+            description={'section 5 title'}
+            defaultMessage={`
+                     <p>
+                        Some of the existing modules:
+                     </p>
+`}
+            values={{
+                p: name => <p>{name}</p>,
+            }}
+        />} direction={1}
+                 description={<FormattedMessage
+                     description={'section 5 description'}
+                     defaultMessage={`
                      <ul>
-                         <li>- Patient Management</li>
-                         <li>- Clinic history</li>
-                         <li>- Administrative and Medical Image Manager</li>
-                         <li>- Resource Planning Agenda</li>
-                         <li>- Connection with various accounting platforms</li>
+                        <li>- Patient Management</li>
+                        <li>- Adaptable clinical history</li>
+                        <li>- Administrative and Medical Image Manager</li>
+                        <li>- Resource Planning Agenda</li>
+                        <li>- Billing of multiple resources and services</li>
+                        <li>- Connection with various accounting platforms</li>
                      </ul>
-                 </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
-        <Section store={props.store} title={'Alef-Tav Soft se adapta a sus necesidades, y no al revés.'} direction={1}
-                 description={<div>
-                     Desarrollamos y nos adaptamos a las necesidades particulares de cada cliente haciendo realidad a
-                     cada deseo. ¡En las manos de Alef Tav Software todo es posible!
-                     <p/>
-                     Usted no debe adaptarse al Software, es Alef-Tav Soft y todo el equipo de desarrollo que se adapta
-                     totalmente a sus necesidades de forma ágil y eficiente.
-                 </div>} img={<Image src={profilePic} width="3824" height="1900"/>}/>
+`}
+                     values={{
+                         p: name => <p>{name}</p>,
+                         ul: name => <ul>{name}</ul>,
+                         li: name => <li>{name}</li>,
+                     }}
+                 />} img={<Image src={profilePic} width="3824" height="1900"/>}/>
         <Footer/>
     </div>
 }
