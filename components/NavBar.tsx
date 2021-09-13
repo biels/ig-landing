@@ -59,11 +59,30 @@ export const NavBar = (props: NavBarProps) => {
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-start">
                     <Link href="#about" passHref >
-                        <a className="navbar-brand">
+                        <a className="navbar-item">
                             <FormattedMessage defaultMessage="About" />
                         </a>
                     </Link>
-                    <a className="navbar-item">Product</a>
+                    <Link href="#product" passHref >
+                        <a className="navbar-item">
+                            <FormattedMessage defaultMessage="Product" />
+                        </a>
+                    </Link>
+                    <Link href="#integrations" passHref >
+                        <a className="navbar-item">
+                            <FormattedMessage defaultMessage="Integrations" />
+                        </a>
+                    </Link>
+                    <Link href="#clients" passHref >
+                        <a className="navbar-item">
+                            <FormattedMessage defaultMessage="Clients" />
+                        </a>
+                    </Link>
+                    <Link href="#contact-us" passHref >
+                        <a className="navbar-item">
+                            <FormattedMessage defaultMessage="Contact us" />
+                        </a>
+                    </Link>
                     <a className="navbar-item">Integrations</a>
                     <a className="navbar-item">Clients</a>
                     <a className="navbar-item">Contact us</a>

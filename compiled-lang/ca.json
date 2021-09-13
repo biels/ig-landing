@@ -1,4 +1,10 @@
 {
+  "6cBDhe": [
+    {
+      "type": 0,
+      "value": "Integracions"
+    }
+  ],
   "BIeVF5": [
     {
       "children": [
@@ -65,6 +71,12 @@
       "value": "p"
     }
   ],
+  "WnQ/AZ": [
+    {
+      "type": 0,
+      "value": "Contacti amb nosaltres"
+    }
+  ],
   "cfWpir": [
     {
       "children": [
@@ -81,6 +93,12 @@
     {
       "type": 0,
       "value": "Sobre nosaltres"
+    }
+  ],
+  "iCpuph": [
+    {
+      "type": 0,
+      "value": "Clients"
     }
   ],
   "lDMOTj": [
@@ -285,6 +303,12 @@
       ],
       "type": 8,
       "value": "p"
+    }
+  ],
+  "x/ZVlU": [
+    {
+      "type": 0,
+      "value": "Producte"
     }
   ],
   "xKJY8b": [

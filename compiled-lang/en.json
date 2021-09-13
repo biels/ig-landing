@@ -1,4 +1,10 @@
 {
+  "6cBDhe": [
+    {
+      "type": 0,
+      "value": "Integrations"
+    }
+  ],
   "BIeVF5": [
     {
       "children": [
@@ -61,6 +67,12 @@
       "value": "p"
     }
   ],
+  "WnQ/AZ": [
+    {
+      "type": 0,
+      "value": "Contact us"
+    }
+  ],
   "cfWpir": [
     {
       "children": [
@@ -77,6 +89,12 @@
     {
       "type": 0,
       "value": "About"
+    }
+  ],
+  "iCpuph": [
+    {
+      "type": 0,
+      "value": "Clients"
     }
   ],
   "lDMOTj": [
@@ -211,6 +229,12 @@
       ],
       "type": 8,
       "value": "p"
+    }
+  ],
+  "x/ZVlU": [
+    {
+      "type": 0,
+      "value": "Product"
     }
   ],
   "xKJY8b": [

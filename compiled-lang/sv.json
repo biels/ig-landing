@@ -1,4 +1,10 @@
 {
+  "6cBDhe": [
+    {
+      "type": 0,
+      "value": "Integrationer"
+    }
+  ],
   "BIeVF5": [
     {
       "children": [
@@ -61,6 +67,12 @@
       "value": "p"
     }
   ],
+  "WnQ/AZ": [
+    {
+      "type": 0,
+      "value": "Kontakta oss"
+    }
+  ],
   "cfWpir": [
     {
       "children": [
@@ -77,6 +89,12 @@
     {
       "type": 0,
       "value": "Om oss"
+    }
+  ],
+  "iCpuph": [
+    {
+      "type": 0,
+      "value": "kunder"
     }
   ],
   "lDMOTj": [
@@ -281,6 +299,12 @@
       ],
       "type": 8,
       "value": "p"
+    }
+  ],
+  "x/ZVlU": [
+    {
+      "type": 0,
+      "value": "Produkt"
     }
   ],
   "xKJY8b": [
