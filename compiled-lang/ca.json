@@ -1,0 +1,328 @@
+{
+  "BIeVF5": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Alef Tav Soft és totalment integrable i interconnectable amb sistemes informàtics existents a hospitals o centres de salut "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "L7WBO9": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Base actual de 700 centres hospitalaris i de salut; i alguns socis com Nestlé Espanya, BBraun Medical, Hospital Universitari Infantil Nen Jesús (Madrid), Hospital Universitari Gregorio Marañón (Madrid), Hospital Universitari Central Astúries (Oviedo), Hospital Médica Sur (Mèxic). "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "UnMBqP": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Desenvolupat per ser accessible des de qualsevol dispositiu, és totalment integrable i interconnectable amb els sistemes informàtics existents als hospitals o centres de salut. "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Alef Tav Soft està totalment creat per treballar amb una base de dades unificada, multi-empresa, multi-idioma, multi-context i multi-recursos, i permet accedir a través de servidors en el núvol o al mateix hospital. "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    },
+    {
+      "type": 0,
+      "value": " "
+    }
+  ],
+  "W0uTB+": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Alef Tav Soft està dissenyat per ser modular i totalment adaptable a qualsevol tipus d'hospital i centre de salut "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "cfWpir": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Alguns dels mòduls existents: "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "g5pX+a": [
+    {
+      "type": 0,
+      "value": "Sobre nosaltres"
+    }
+  ],
+  "lDMOTj": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Gestió del pacient "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Història clínica adaptable "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Gestor d’imatges administratives i mèdiques "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Agenda de planificació de recursos "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Facturació de múltiples recursos i serveis "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Connexió amb diverses plataformes comptables "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        }
+      ],
+      "type": 8,
+      "value": "ul"
+    }
+  ],
+  "mFwZFN": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Gestió del pacient "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Història clínica adaptable "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Gestor d’imatges administratives i mèdiques "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Agenda de planificació de recursos "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Facturació de múltiples recursos i serveis "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": 0,
+              "value": " - Connexió amb diverses plataformes comptables "
+            }
+          ],
+          "type": 8,
+          "value": "li"
+        },
+        {
+          "type": 0,
+          "value": " "
+        }
+      ],
+      "type": 8,
+      "value": "ul"
+    }
+  ],
+  "nGz0zM": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Alef Tav Soft, el programari de gestió de nova generació per a centres hospitalaris i de salut "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "xKJY8b": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Alef Tav Soft és un programari avançat de nova generació implementat a farmàcies hospitalàries, centres de diagnòstic per la imatge i que prepara serveis de cardiologia i nutrició clínica. "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Neix d’una base actual amb més de 700 hospitals i centres de salut distribuïts per Europa i Amèrica Llatina, i alguns socis com Nestlé Espanya, BBraun Medical i alguns dels hospitals més importants d’Espanya, com ara Hospital Universitari Infantil Niño Jesús, Hospital Universitari Gregorio Marañón, Hospital Universitari Central d'Astúries o Southern Medical Hospital de Mèxic, entre d'altres. "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "xsAzva": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": " Alef Tav Soft és la solució avançada que s'adapta a totes les vostres necessitats perquè pugueu gestionar fàcilment la informació administrativa i sanitària dels vostres pacients, en qualsevol moment i lloc. "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ]
+}
