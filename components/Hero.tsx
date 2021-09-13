@@ -31,16 +31,15 @@ export const Hero = (props: HeroProps) => {
                     <div className="hero-body">
                         <p className="title is-2">
                             <FormattedMessage
-                                description={'section 5 description'}
+                                description={'hero title'}
                                 defaultMessage={`
                                                  <p>Alef-Tav, the new generation management software for Hospitals and HealthCare</p>
 `}
                                 values={{
                                     p: name => <p>{name}</p>,
-                                    ul: name => <ul>{name}</ul>,
-                                    li: name => <li>{name}</li>,
                                 }}
                             />
+                        </p>
                         <p className="subtitle is-4">
                             Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.
                         </p>
