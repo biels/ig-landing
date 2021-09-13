@@ -83,9 +83,6 @@ export const NavBar = (props: NavBarProps) => {
                             <FormattedMessage defaultMessage="Contact us" />
                         </a>
                     </Link>
-                    <a className="navbar-item">Integrations</a>
-                    <a className="navbar-item">Clients</a>
-                    <a className="navbar-item">Contact us</a>
                     <div className="navbar-item">
                         <div className="navbar-item has-dropdown is-hoverable">
                             <a className="navbar-link">
