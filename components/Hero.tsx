@@ -29,24 +29,18 @@ export const Hero = (props: HeroProps) => {
             <InnerHeroContainer>
                 <div>
                     <div className="hero-body">
-                        <p className="title is-2"><FormattedMessage
-                            description={'section 5 description'}
-                            defaultMessage={`
-                     <ul>
-                        <li>- Patient Management</li>
-                        <li>- Adaptable clinical history</li>
-                        <li>- Administrative and Medical Image Manager</li>
-                        <li>- Resource Planning Agenda</li>
-                        <li>- Billing of multiple resources and services</li>
-                        <li>- Connection with various accounting platforms</li>
-                     </ul>
+                        <p className="title is-2">
+                            <FormattedMessage
+                                description={'section 5 description'}
+                                defaultMessage={`
+                                                 <p>Alef-Tav, the new generation management software for Hospitals and HealthCare</p>
 `}
-                            values={{
-                                p: name => <p>{name}</p>,
-                                ul: name => <ul>{name}</ul>,
-                                li: name => <li>{name}</li>,
-                            }}
-                        /></p>
+                                values={{
+                                    p: name => <p>{name}</p>,
+                                    ul: name => <ul>{name}</ul>,
+                                    li: name => <li>{name}</li>,
+                                }}
+                            />
                         <p className="subtitle is-4">
                             Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.
                         </p>
