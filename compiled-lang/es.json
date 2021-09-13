@@ -1,10 +1,28 @@
 {
+  "6cBDhe": [
+    {
+      "type": 0,
+      "value": "Integraciones"
+    }
+  ],
   "BIeVF5": [
     {
       "children": [
         {
           "type": 0,
           "value": " Alef Tav Soft es totalmente integrable e interconectable con los sistemas informáticos existentes en hospitales o centros de salud "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "Fn9cfo": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav es la solución avanzada que se adapta a todas sus necesidades para que pueda administrar fácilmente la información de sus pacientes y su atención médica, en cualquier momento y en cualquier lugar."
         }
       ],
       "type": 8,
@@ -61,6 +79,12 @@
       "value": "p"
     }
   ],
+  "WnQ/AZ": [
+    {
+      "type": 0,
+      "value": "Contáctenos"
+    }
+  ],
   "cfWpir": [
     {
       "children": [
@@ -77,6 +101,12 @@
     {
       "type": 0,
       "value": "Sobre nosotros"
+    }
+  ],
+  "iCpuph": [
+    {
+      "type": 0,
+      "value": "Clientela"
     }
   ],
   "lDMOTj": [
@@ -281,6 +311,24 @@
       ],
       "type": 8,
       "value": "p"
+    }
+  ],
+  "wAESaa": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav, el software de administración de nueva generación para hospitales y atención médica"
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "x/ZVlU": [
+    {
+      "type": 0,
+      "value": "Producto"
     }
   ],
   "xKJY8b": [

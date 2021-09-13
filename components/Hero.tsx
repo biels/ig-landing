@@ -2,6 +2,7 @@ import React, {useState, useEffect, useContext} from "react";
 import styled from 'styled-components'
 import Image from "next/image";
 import heroImg from "../assets/hero_img.png";
+import {FormattedMessage} from "react-intl";
 
 const Container = styled.div`
     display: grid;
@@ -28,9 +29,28 @@ export const Hero = (props: HeroProps) => {
             <InnerHeroContainer>
                 <div>
                     <div className="hero-body">
-                        <p className="title is-2">Alef-Tav, the new generation management software for Hospitals and HealthCare</p>
+                        <p className="title is-2">
+                            <FormattedMessage
+                                description={'hero title'}
+                                defaultMessage={`
+                                                 <p>Alef-Tav, the new generation management software for Hospitals and HealthCare</p>
+`}
+                                values={{
+                                    p: name => <p>{name}</p>,
+                                }}
+                            />
+                        </p>
                         <p className="subtitle is-4">
-                            Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.
+                            <FormattedMessage
+                                description={'hero subtitle'}
+                                defaultMessage={`
+                                                 <p>Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.</p>
+`}
+                                values={{
+                                    p: name => <p>{name}</p>,
+                                }}
+                            />
+
                         </p>
                     </div>
                 </div>

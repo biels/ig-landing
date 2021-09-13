@@ -1,10 +1,28 @@
 {
+  "6cBDhe": [
+    {
+      "type": 0,
+      "value": "Integrationer"
+    }
+  ],
   "BIeVF5": [
     {
       "children": [
         {
           "type": 0,
           "value": " Alef Tav Soft är helt integrerbar och kan anslutas till befintliga datorsystem på sjukhus eller vårdcentraler "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "Fn9cfo": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav är den avancerade lösningen som anpassar sig till alla dina behov så att du enkelt kan hantera dina patienter och vårdinformation-när som helst och var som helst."
         }
       ],
       "type": 8,
@@ -61,6 +79,12 @@
       "value": "p"
     }
   ],
+  "WnQ/AZ": [
+    {
+      "type": 0,
+      "value": "Kontakta oss"
+    }
+  ],
   "cfWpir": [
     {
       "children": [
@@ -77,6 +101,12 @@
     {
       "type": 0,
       "value": "Om oss"
+    }
+  ],
+  "iCpuph": [
+    {
+      "type": 0,
+      "value": "kunder"
     }
   ],
   "lDMOTj": [
@@ -281,6 +311,24 @@
       ],
       "type": 8,
       "value": "p"
+    }
+  ],
+  "wAESaa": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav, den nya generationens hanteringsprogramvara för sjukhus och hälsovård"
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "x/ZVlU": [
+    {
+      "type": 0,
+      "value": "Produkt"
     }
   ],
   "xKJY8b": [

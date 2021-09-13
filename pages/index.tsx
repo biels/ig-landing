@@ -82,7 +82,7 @@ export default function Home(props: HomeProps) {
                          p: name => <p>{name}</p>,
                      }}
                  />}/>
-        <Section store={props.store}
+        <Section id={'product'} store={props.store}
                  title={<FormattedMessage
                      description={'section 2 title'}
                      defaultMessage={`
@@ -109,7 +109,7 @@ export default function Home(props: HomeProps) {
                          p: name => <p>{name}</p>,
                      }}
                  />}/>
-        <Section store={props.store} title={<FormattedMessage
+        <Section id={'integrations'} store={props.store} title={<FormattedMessage
             description={'section 3 title'}
             defaultMessage={`
                      <p>
@@ -135,7 +135,7 @@ export default function Home(props: HomeProps) {
                          p: name => <p>{name}</p>,
                      }}
                  />} img={<Image src={profilePic} width="3824" height="1900"/>}/>
-        <Section store={props.store} title={<FormattedMessage
+        <Section id={'clients'} store={props.store} title={<FormattedMessage
             description={'section 4 title'}
             defaultMessage={`
                      <p>
@@ -160,7 +160,7 @@ export default function Home(props: HomeProps) {
                          p: name => <p>{name}</p>,
                      }}
                  />} img={<Image src={profilePic} width="3824" height="1900"/>}/>
-        <Section store={props.store} title={<FormattedMessage
+        <Section id={'contact-us'} store={props.store} title={<FormattedMessage
             description={'section 5 title'}
             defaultMessage={`
                      <p>

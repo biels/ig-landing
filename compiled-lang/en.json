@@ -1,10 +1,28 @@
 {
+  "6cBDhe": [
+    {
+      "type": 0,
+      "value": "Integrations"
+    }
+  ],
   "BIeVF5": [
     {
       "children": [
         {
           "type": 0,
           "value": " Alef Tav Soft is fully integrable and interconnectable with existing computer systems in Hospitals or Health Centers "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "Fn9cfo": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere."
         }
       ],
       "type": 8,
@@ -61,6 +79,12 @@
       "value": "p"
     }
   ],
+  "WnQ/AZ": [
+    {
+      "type": 0,
+      "value": "Contact us"
+    }
+  ],
   "cfWpir": [
     {
       "children": [
@@ -77,6 +101,12 @@
     {
       "type": 0,
       "value": "About"
+    }
+  ],
+  "iCpuph": [
+    {
+      "type": 0,
+      "value": "Clients"
     }
   ],
   "lDMOTj": [
@@ -211,6 +241,24 @@
       ],
       "type": 8,
       "value": "p"
+    }
+  ],
+  "wAESaa": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav, the new generation management software for Hospitals and HealthCare"
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "x/ZVlU": [
+    {
+      "type": 0,
+      "value": "Product"
     }
   ],
   "xKJY8b": [
