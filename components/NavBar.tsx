@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import {motion, useAnimation} from "framer-motion";
 import Image from "next/image";
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/Alef-Tav-Logo-Web.svg";
 import {useInView} from "react-intersection-observer";
 import {FormattedMessage} from "react-intl";
 
