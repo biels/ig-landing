@@ -58,29 +58,29 @@ export const NavBar = (props: NavBarProps) => {
 
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-start">
-                    <Link href="#about" passHref >
+                    <Link href="#about" passHref>
                         <a className="navbar-item">
-                            <FormattedMessage defaultMessage="About" />
+                            <FormattedMessage defaultMessage="About"/>
                         </a>
                     </Link>
-                    <Link href="#product" passHref >
+                    <Link href="#product" passHref>
                         <a className="navbar-item">
-                            <FormattedMessage defaultMessage="Product" />
+                            <FormattedMessage defaultMessage="Product"/>
                         </a>
                     </Link>
-                    <Link href="#integrations" passHref >
+                    <Link href="#integrations" passHref>
                         <a className="navbar-item">
-                            <FormattedMessage defaultMessage="Integrations" />
+                            <FormattedMessage defaultMessage="Integrations"/>
                         </a>
                     </Link>
-                    <Link href="#clients" passHref >
+                    <Link href="https://www.medicalione.com/es/clientes/" passHref>
                         <a className="navbar-item">
-                            <FormattedMessage defaultMessage="Clients" />
+                            <FormattedMessage defaultMessage="Clients"/>
                         </a>
                     </Link>
-                    <Link href="#contact-us" passHref >
+                    <Link href="https://www.medicalione.com/es/contactar/" passHref>
                         <a className="navbar-item">
-                            <FormattedMessage defaultMessage="Contact us" />
+                            <FormattedMessage defaultMessage="Contact us"/>
                         </a>
                     </Link>
                     <div className="navbar-item">
@@ -130,7 +130,10 @@ export const NavBar = (props: NavBarProps) => {
                 <div className="navbar-end">
                     <div className="navbar-item">
                         <div className="buttons">
-                            <ButtonContainer className="button is-primary"><strong>Contact us</strong></ButtonContainer>
+                            <Link href={'https://www.medicalione.com/es/contactar/'}>
+                                <ButtonContainer className="button is-primary"><strong>Contact
+                                    us</strong></ButtonContainer>
+                            </Link>
                         </div>
                     </div>
                 </div>
