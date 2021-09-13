@@ -4,6 +4,8 @@ import Link from 'next/link'
 import logoImg from '../assets/logo.png'
 import profilePic from '../assets/img.png'
 import aboutImg from '../assets/about_img.png'
+import integrationsImg from '../assets/integrations_img.png'
+import clientsImg from '../assets/clients_img.png'
 import heroImg from '../assets/hero_img.png'
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer";
@@ -120,6 +122,7 @@ export default function Home(props: HomeProps) {
                 p: name => <p>{name}</p>,
             }}
         />} direction={1}
+
                  description={<FormattedMessage
                      description={'section 3 description'}
                      defaultMessage={`
@@ -134,7 +137,7 @@ export default function Home(props: HomeProps) {
                      values={{
                          p: name => <p>{name}</p>,
                      }}
-                 />} img={<Image src={profilePic} width="3824" height="1900"/>}/>
+                 />} img={<Image src={integrationsImg} width="3824" height="1900"/>}/>
         <Section id={'clients'} store={props.store} title={<FormattedMessage
             description={'section 4 title'}
             defaultMessage={`
@@ -159,7 +162,7 @@ export default function Home(props: HomeProps) {
                      values={{
                          p: name => <p>{name}</p>,
                      }}
-                 />} img={<Image src={profilePic} width="3824" height="1900"/>}/>
+                 />} img={<Image src={clientsImg} width="3824" height="1900"/>}/>
         <Section id={'contact-us'} store={props.store} title={<FormattedMessage
             description={'section 5 title'}
             defaultMessage={`
