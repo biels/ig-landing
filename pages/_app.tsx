@@ -33,6 +33,7 @@ function MyApp({Component, pageProps, locale, messages}) {
  * and the promise of fetching the translated messages
  */
 function getMessages(locales: string | string[] = ['en']) {
+    console.log(`getMessages locales`, locales);
     if (!Array.isArray(locales)) {
         locales = [locales];
     }
