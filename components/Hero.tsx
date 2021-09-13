@@ -33,7 +33,7 @@ export const Hero = (props: HeroProps) => {
                             <FormattedMessage
                                 description={'hero title'}
                                 defaultMessage={`
-                                                 <p>Alef-Tav, the new generation management software for Hospitals and HealthCare</p>
+                                                 <p>Alef-Tav Soft, the new generation management software for Hospitals and HealthCare</p>
 `}
                                 values={{
                                     p: name => <p>{name}</p>,
@@ -44,7 +44,7 @@ export const Hero = (props: HeroProps) => {
                             <FormattedMessage
                                 description={'hero subtitle'}
                                 defaultMessage={`
-                                                 <p>Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.</p>
+                                                 <p>Alef-Tav Soft is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.</p>
 `}
                                 values={{
                                     p: name => <p>{name}</p>,
