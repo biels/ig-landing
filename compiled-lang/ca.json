@@ -17,6 +17,18 @@
       "value": "p"
     }
   ],
+  "Fn9cfo": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav és la solució avançada que s'adapta a totes les vostres necessitats perquè pugueu gestionar fàcilment els vostres pacients i la vostra informació sanitària, en qualsevol moment i en qualsevol lloc."
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
   "L7WBO9": [
     {
       "children": [
@@ -299,6 +311,18 @@
         {
           "type": 0,
           "value": " Alef Tav Soft, el programari de gestió de nova generació per a centres hospitalaris i de salut "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "wAESaa": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav, el programari de gestió de nova generació per a hospitals i serveis sanitaris"
         }
       ],
       "type": 8,

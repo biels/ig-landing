@@ -17,6 +17,18 @@
       "value": "p"
     }
   ],
+  "Fn9cfo": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav är den avancerade lösningen som anpassar sig till alla dina behov så att du enkelt kan hantera dina patienter och vårdinformation-när som helst och var som helst."
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
   "L7WBO9": [
     {
       "children": [
@@ -295,6 +307,18 @@
         {
           "type": 0,
           "value": " Alef Tav Soft, den nya generationens hanteringsprogramvara för sjukhus och vårdcentraler "
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
+  "wAESaa": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav, den nya generationens hanteringsprogramvara för sjukhus och hälsovård"
         }
       ],
       "type": 8,

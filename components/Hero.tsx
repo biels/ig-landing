@@ -41,7 +41,16 @@ export const Hero = (props: HeroProps) => {
                             />
                         </p>
                         <p className="subtitle is-4">
-                            Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.
+                            <FormattedMessage
+                                description={'hero subtitle'}
+                                defaultMessage={`
+                                                 <p>Alef-Tav is the advanced solution that adapts to all your needs for you to easily manage your patients and healthcare information – anytime, anywhere.</p>
+`}
+                                values={{
+                                    p: name => <p>{name}</p>,
+                                }}
+                            />
+
                         </p>
                     </div>
                 </div>

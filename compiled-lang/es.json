@@ -17,6 +17,18 @@
       "value": "p"
     }
   ],
+  "Fn9cfo": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav es la solución avanzada que se adapta a todas sus necesidades para que pueda administrar fácilmente la información de sus pacientes y su atención médica, en cualquier momento y en cualquier lugar."
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
   "L7WBO9": [
     {
       "children": [
@@ -301,10 +313,22 @@
       "value": "p"
     }
   ],
+  "wAESaa": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Alef-Tav, el software de administración de nueva generación para hospitales y atención médica"
+        }
+      ],
+      "type": 8,
+      "value": "p"
+    }
+  ],
   "x/ZVlU": [
     {
       "type": 0,
-      "value": "producto"
+      "value": "Producto"
     }
   ],
   "xKJY8b": [
