@@ -21,8 +21,7 @@ Promise.all([app.prepare(), ...SUPPORTED_LOCALES.map(polyfill)]).then(() => {
   createServer((req, res) => {
     const accept = accepts(req);
     const locale = accept.language(supportedLanguages) || 'en';
-    console.log(`locale srv`, locale);
-    (req as any).locale = 'es';
+    (req as any).locale = locale;
     const nonce = crypto.randomBytes(20).toString('hex');
     (req as any).nonce = nonce;
     // TODO: This will blow up other next inline JS but next.js should prob fix this

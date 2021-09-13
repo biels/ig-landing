@@ -16,6 +16,7 @@ import {Footer} from '../components/Footer'
 import {useStore} from "../utils/utils";
 import {FormattedMessage, useIntl, injectIntl} from "react-intl";
 import Head from 'next/head'
+import {useRouter} from "next/router";
 
 
 const SectionContainer = styled.div`
@@ -47,9 +48,10 @@ export interface HomeProps {
 export default function Home(props: HomeProps) {
     let store = useStore()
     let intl = useIntl()
+    let router = useRouter()
     return <div>
         <Head>
-            <title>Alef-Tav ({intl.locale})</title>
+            <title>Alef-Tav ({router.locale})</title>
             <meta charSet="utf-8" />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>

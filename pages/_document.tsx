@@ -22,7 +22,7 @@ export default class MyDocument extends Document<Props> {
                 })
             const {req} = ctx;
             const initialProps = await Document.getInitialProps(ctx)
-            const locale = (req as any).locale;
+            const locale = ctx.locale;
             return {
                 ...initialProps,
                 styles: (
@@ -52,7 +52,6 @@ export default class MyDocument extends Document<Props> {
                 />
             );
         }
-        console.log(`this.props.lang`, this.props.lang);
         return (
             <Html className="" lang={this.props.lang}>
                 <Head>
