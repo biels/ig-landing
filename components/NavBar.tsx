@@ -28,6 +28,11 @@ const ButtonContainer = styled.div`
   font-size: 16px;
   font-weight: 500;
 `
+const LogoContainer = styled.div`
+  display: grid;
+  padding-left: 16px;
+  padding-right: 8px;
+`
 
 export interface NavBarProps {
 }
@@ -53,7 +58,9 @@ export const NavBar = (props: NavBarProps) => {
                     animate={controls}
         >
             <div className="navbar-brand">
-                <Image src={logoImg} width="90" height="29"/>
+                <LogoContainer>
+                    <Image src={logoImg}/>
+                </LogoContainer>
             </div>
 
             <div id="navbarBasicExample" className="navbar-menu">
